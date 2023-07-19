@@ -3,7 +3,15 @@
 
 module.exports = function (config) {
   config.set({
-    browsers: ['ChromeHeadless'],
+    
+
+    browsers: ['ChromeHeadlessNoSandbox'],
+    customLaunchers: {
+      ChromeHeadlessNoSandbox: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox'],
+      },
+    },
 
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
