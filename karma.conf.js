@@ -42,7 +42,7 @@ module.exports = function (config) {
     autoWatch: true,
     singleRun: false,
     
-    browsers: ['Firefox'],
+    browsers: ['ChromeHeadless'],
 
     restartOnFileChange: true
   });
