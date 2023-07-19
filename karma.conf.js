@@ -3,6 +3,8 @@
 
 module.exports = function (config) {
   config.set({
+    browsers: ['ChromeHeadless'],
+
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
